@@ -4,7 +4,7 @@ import MobileDashboardPreview from "../previews/MobileDashboardPreview";
 
 export default function HeroSection() {
     return (
-        <section className="gray-container landing-section border-b">
+        <section className="gray-container landing-section lg:border-b">
             <div className="landing-container text-center">
 
                 <h1 className="hero-title mx-auto max-w-3xl">
@@ -19,7 +19,7 @@ export default function HeroSection() {
                     events a success.
                 </p>
 
-                <div className="mt-8 flex flex-wrap justify-center gap-3">
+                <div className="mt-8 flex flex-col sm:flex-row justify-center gap-3">
                     <Button size="lg">
                         Get Started
                     </Button>

@@ -38,8 +38,7 @@ export default function AccountSection() {
       <div className="landing-container">
 
         <SectionHeading
-          title="Start free, upgrade anytime"
-          description="Choose how you want to experience EventFlow."
+          title="Choose how you want to experience EventSphere AI"
         />
 
         <div className="mx-auto grid max-w-3xl gap-6 md:grid-cols-2">
@@ -48,8 +47,8 @@ export default function AccountSection() {
             <article
               key={plan.title}
               className={`relative flex flex-col rounded-xl border p-6 ${plan.highlighted
-                ? "border-primary bg-card shadow-sm"
-                : "border-border bg-muted"
+                  ? "border-primary bg-card shadow-sm"
+                  : "bg-card lg:bg-muted"
                 }`}
             >
 
@@ -63,7 +62,7 @@ export default function AccountSection() {
                 <h2>{plan.title}</h2>
 
                 {!plan.highlighted && (
-                  <span className="caption-text rounded-full bg-secondary px-2 py-1 text-secondary-foreground">
+                  <span className="caption-text rounded-full bg-secondary-darker px-2 py-1 text-secondary-foreground">
                     {plan.badge}
                   </span>
                 )}

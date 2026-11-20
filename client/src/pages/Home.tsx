@@ -7,7 +7,7 @@ import CTASection from "@/features/home-page/components/CTASection";
 
 export default function Home() {
   return (
-    <main>
+    <main className="bg-muted">
       <HeroSection />
       <FeaturesSection />
       <HowItWorksSection />

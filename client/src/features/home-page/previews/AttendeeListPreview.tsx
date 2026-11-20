@@ -50,7 +50,7 @@ export default function AttendeeListPreview() {
               <span
                 className={`rounded px-2 py-1 font-medium ${attendee.confirmed
                   ? "bg-status-ongoing-bg text-status-ongoing-text"
-                  : "bg-warning/15 text-amber-800 dark:text-amber-300"
+                  : "bg-warning/50 text-amber-800"
                   }`}
               >
                 {attendee.confirmed

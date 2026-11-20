@@ -33,6 +33,7 @@
     --color-secondary: var(--secondary);
     --color-primary-foreground: var(--primary-foreground);
     --color-primary: var(--primary);
+    --color-secondary-darker: color-mix(in srgb, var(--secondary) 90%, black);
     --color-popover-foreground: var(--popover-foreground);
     --color-popover: var(--popover);
     --color-card-foreground: var(--card-foreground);
@@ -156,15 +157,15 @@
 
     /*custom styles*/
     h1 {
-        @apply text-[20px] lg:text-[24px] font-bold;
+        @apply text-[24px] font-bold;
     }
 
     h2 {
-        @apply text-[16px] lg:text-[20px] font-semibold;
+        @apply text-[20px] font-semibold;
     }
 
     h3 {
-        @apply text-base lg:text-[16px] font-semibold;
+        @apply text-[16px] font-semibold;
     }
 }
 
@@ -186,7 +187,7 @@
     }
 
     .white-container {
-        @apply bg-background;
+        @apply bg-muted lg:bg-background;
     }
 
     /* Landing page */
@@ -224,5 +225,9 @@
 
     .preview-card {
         @apply rounded-lg border bg-card p-4 shadow-sm;
+    }
+
+    .responsive-card {
+        @apply bg-card rounded-xl border p-4 shadow-sm md:p-6 lg:bg-transparent lg:rounded-none lg:border-0 lg:p-0 lg:shadow-none;
     }
 }

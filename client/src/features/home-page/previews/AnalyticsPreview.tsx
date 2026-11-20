@@ -37,7 +37,7 @@ export default function AnalyticsPreview() {
               No-show Rate
             </p>
 
-            <p className="mt-1 font-semibold text-status-ongoing-text">
+            <p className="mt-1 font-semibold text-warning">
               8.6%
             </p>
           </div>

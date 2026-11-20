@@ -20,7 +20,7 @@ const steps = [
 
 export default function HowItWorksSection() {
     return (
-        <section className="gray-container landing-section border-y">
+        <section className="gray-container landing-section lg:border-y">
             <div className="landing-container">
 
                 <SectionHeading
@@ -33,17 +33,19 @@ export default function HowItWorksSection() {
                     {steps.map((step, index) => (
                         <article
                             key={step.title}
-                            className="rounded-xl border bg-card p-6 shadow-sm"
+                            className="flex flex-row items-start gap-4 md:flex-col md:gap-0 rounded-xl border bg-card p-6 shadow-sm"
                         >
-                            <div className="mb-5 flex size-9 items-center justify-center rounded-full bg-primary font-semibold text-primary-foreground">
+                            <div className="md:mb-5 flex size-9 shrink-0 items-center justify-center rounded-full bg-primary font-semibold text-primary-foreground">
                                 {index + 1}
                             </div>
 
-                            <h3>{step.title}</h3>
+                            <div>
+                                <h3>{step.title}</h3>
 
-                            <p className="body-regular mt-3 leading-relaxed text-muted-foreground">
-                                {step.description}
-                            </p>
+                                <p className="body-regular mt-1 md:mt-3 leading-relaxed text-muted-foreground">
+                                    {step.description}
+                                </p>
+                            </div>
                         </article>
                     ))}
 

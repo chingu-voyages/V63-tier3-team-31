@@ -22,20 +22,23 @@ function FeatureRow({
     children,
 }: FeatureRowProps) {
     return (
-        <article className="grid items-center gap-8 md:grid-cols-2">
+        <article className="responsive-card grid items-center gap-8 md:grid-cols-2">
 
-            <div className={reversed ? "md:order-2" : ""}>
-                <div className="feature-icon">
+            <div className={`flex flex-row items-start gap-4 md:flex-col md:gap-0 ${reversed ? "md:order-2" : ""
+                }`}>
+                <div className="feature-icon shrink-0">
                     {icon}
                 </div>
 
-                <h3 className="feature-title">
-                    {title}
-                </h3>
+                <div>
+                    <h3 className="feature-title">
+                        {title}
+                    </h3>
 
-                <p className="body-regular mt-3 leading-relaxed text-muted-foreground">
-                    {description}
-                </p>
+                    <p className="body-regular mt-1 md:mt-3 leading-relaxed text-muted-foreground">
+                        {description}
+                    </p>
+                </div>
             </div>
 
             <div className={reversed ? "md:order-1" : ""}>

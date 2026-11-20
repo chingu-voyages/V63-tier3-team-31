@@ -8,9 +8,9 @@ import SectionHeading from "./SectionHeading";
 
 const faqs = [
     {
-        question: "Do I need an account to try EventFlow?",
+        question: "Do I need an account to try EventSphere AI?",
         answer:
-            "No, you can try EventFlow instantly as a guest without creating an account or providing a credit card.",
+            "No, you can try EventSphere AI instantly as a guest without creating an account or providing a credit card.",
     },
     {
         question: "What can guests do?",
@@ -20,7 +20,7 @@ const faqs = [
     {
         question: "Do my attendees need to sign up?",
         answer:
-            "No. Attendees can be added to your guest list without creating an EventFlow account.",
+            "No. Attendees can be added to your guest list without creating an EventSphere AI account.",
     },
     {
         question: "Can I undo a check-in?",
@@ -36,12 +36,12 @@ const faqs = [
 
 export default function FAQSection() {
     return (
-        <section className="gray-container landing-section border-t">
+        <section className="gray-container landing-section lg:border-t">
             <div className="landing-container">
 
                 <SectionHeading
                     title="Frequently asked questions"
-                    description="Clear answers about using EventFlow for your next gathering."
+                    description="Clear answers about using EventSphere AI for your next gathering."
                 />
 
                 <Accordion

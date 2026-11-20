@@ -18,7 +18,6 @@ export default function NavBar() {
         setIsMenuOpen(false);
     }
 
-    // Prevent scrolling behind the mobile menu
     useEffect(() => {
         if (!isMenuOpen) return;
 
@@ -30,7 +29,6 @@ export default function NavBar() {
         };
     }, [isMenuOpen]);
 
-    // Close the menu when switching to tablet or desktop
     useEffect(() => {
         const mediaQuery = window.matchMedia("(min-width: 768px)");
 

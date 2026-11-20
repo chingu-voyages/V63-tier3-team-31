@@ -4,7 +4,7 @@ import MobileDashboardPreview from "../previews/MobileDashboardPreview";
 
 export default function HeroSection() {
     return (
-        <section className="gray-container landing-section lg:border-b">
+        <section id="home" className="gray-container landing-section lg:border-b">
             <div className="landing-container text-center">
 
                 <h1 className="hero-title mx-auto max-w-3xl">

@@ -20,7 +20,7 @@ const steps = [
 
 export default function HowItWorksSection() {
     return (
-        <section className="gray-container landing-section lg:border-y">
+        <section id="how-it-works" className="gray-container landing-section lg:border-y">
             <div className="landing-container">
 
                 <SectionHeading

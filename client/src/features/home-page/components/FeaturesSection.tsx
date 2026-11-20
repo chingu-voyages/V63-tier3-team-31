@@ -51,7 +51,7 @@ function FeatureRow({
 
 export default function FeaturesSection() {
     return (
-        <section className="white-container landing-section">
+        <section id="features" className="white-container landing-section">
             <div className="landing-container">
 
                 <SectionHeading

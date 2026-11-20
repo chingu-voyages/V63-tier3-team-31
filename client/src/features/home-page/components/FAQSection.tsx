@@ -36,7 +36,7 @@ const faqs = [
 
 export default function FAQSection() {
     return (
-        <section className="gray-container landing-section lg:border-t">
+        <section id="faq" className="gray-container landing-section lg:border-t">
             <div className="landing-container">
 
                 <SectionHeading

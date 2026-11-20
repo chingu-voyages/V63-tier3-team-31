@@ -4,16 +4,20 @@ import HowItWorksSection from "@/features/home-page/components/HowItWorksSection
 import AccountSection from "@/features/home-page/components/AccountSection";
 import FAQSection from "@/features/home-page/components/FAQSection";
 import CTASection from "@/features/home-page/components/CTASection";
+import NavBar from "@/features/home-page/components/NavBar";
 
 export default function Home() {
   return (
-    <main className="bg-muted">
-      <HeroSection />
-      <FeaturesSection />
-      <HowItWorksSection />
-      <AccountSection />
-      <FAQSection />
-      <CTASection />
-    </main>
+    <>
+      <NavBar />
+      <main className="bg-muted">
+        <HeroSection />
+        <FeaturesSection />
+        <HowItWorksSection />
+        <AccountSection />
+        <FAQSection />
+        <CTASection />
+      </main>
+    </>
   );
 }

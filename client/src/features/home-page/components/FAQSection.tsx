@@ -45,7 +45,7 @@ export default function FAQSection() {
                 />
 
                 <Accordion
-                    defaultValue={["faq-0"]}
+                    defaultValue={[]}
                     className="mx-auto max-w-3xl space-y-3"
                 >
 

@@ -2,10 +2,8 @@ export default function MobileDashboardPreview() {
     return (
         <div className="mx-auto mt-8 w-full max-w-sm rounded-[36px] border-[5px] border-foreground bg-card p-4 shadow-xl">
 
-            {/* Phone notch */}
             <div className="mx-auto mb-4 h-4 w-32 rounded-full bg-foreground" />
 
-            {/* Active event */}
             <div className="rounded-2xl bg-primary p-4 text-left text-primary-foreground">
 
                 <div className="flex items-center justify-between gap-2">
@@ -27,7 +25,6 @@ export default function MobileDashboardPreview() {
                 </p>
             </div>
 
-            {/* Statistics */}
             <div className="mt-4 grid grid-cols-2 gap-3 text-left">
 
                 <div className="rounded-lg border bg-card p-3 shadow-sm">

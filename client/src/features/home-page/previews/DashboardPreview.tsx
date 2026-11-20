@@ -44,7 +44,7 @@ export default function DashboardPreview() {
         </div>
 
         <div className="mx-auto w-1/3 rounded-sm border bg-background px-2 py-1 text-center text-[10px] text-muted-foreground">
-          app.eventflow.io/dashboard
+          app.eventsphere.io/dashboard
         </div>
       </div>
 

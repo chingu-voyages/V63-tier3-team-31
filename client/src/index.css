@@ -77,9 +77,7 @@
     --popover: oklch(1 0 0);
     --popover-foreground: oklch(0.145 0 0);
     --primary: #5B5BD6;
-    /* custom style */
     --primary-foreground: #FFFFFF;
-    /* custom style */
     --secondary: #F3F4F6;
     --secondary-foreground: #374151;
     --muted: #F8F9FA;
@@ -114,9 +112,7 @@
     --popover: oklch(0.205 0 0);
     --popover-foreground: oklch(0.985 0 0);
     --primary: #7B7BE5;
-    /* custom style */
     --primary-foreground: #1F2937;
-    /* custom style */
     --secondary: oklch(0.269 0 0);
     --secondary-foreground: oklch(0.985 0 0);
     --muted: oklch(0.269 0 0);
@@ -155,7 +151,6 @@
         @apply font-sans;
     }
 
-    /*custom styles*/
     h1 {
         @apply text-[24px] font-bold;
     }
@@ -190,7 +185,6 @@
         @apply bg-muted lg:bg-background;
     }
 
-    /* Landing page */
     .landing-container {
         @apply mx-auto w-full max-w-7xl px-6 lg:px-8;
     }

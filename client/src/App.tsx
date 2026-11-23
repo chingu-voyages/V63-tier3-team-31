@@ -1,10 +1,13 @@
 import './App.css'
+import Footer from './components/layouts/footer/Footer'
+import Home from './pages/Home'
 
 function App() {
 
   return (
     <>
-      <h1>Event Manager App</h1>
+      <Home />
+      <Footer />
     </>
   )
 }

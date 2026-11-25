@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
-import { CalendarCheck, Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import Logo from "@/components/common/Logo";
+import { Menu, X } from "lucide-react";
 
 const navLinks = [
     { label: "Home", href: "#home" },
@@ -50,24 +51,9 @@ export default function NavBar() {
 
             <div className="landing-container flex min-h-16 items-center justify-between gap-6 md:justify-center lg:justify-between">
 
-                {/* Logo and navigation */}
                 <div className="flex items-center gap-6 lg:gap-8">
+                    <Logo />
 
-                    <a
-                        href="#home"
-                        onClick={() => handleNavClick("#home")}
-                        className="flex shrink-0 items-center gap-3"
-                    >
-                        <div className="flex size-8 items-center justify-center rounded-lg bg-primary text-primary-foreground">
-                            <CalendarCheck size={22} />
-                        </div>
-
-                        <span className="text-xl font-semibold">
-                            EventSphere AI
-                        </span>
-                    </a>
-
-                    {/* Tablet & desktop navigation */}
                     <nav
                         aria-label="Main navigation"
                         className="hidden items-center gap-4 md:flex lg:gap-6"
@@ -77,11 +63,10 @@ export default function NavBar() {
                                 key={link.href}
                                 href={link.href}
                                 onClick={() => handleNavClick(link.href)}
-                                className={`body-medium whitespace-nowrap border-b-2 py-2 transition-colors hover:text-primary ${
-                                    activeLink === link.href
-                                        ? "border-primary text-primary"
-                                        : "border-transparent text-muted-foreground"
-                                }`}
+                                className={`body-medium whitespace-nowrap border-b-2 py-2 transition-colors hover:text-primary ${activeLink === link.href
+                                    ? "border-primary text-primary"
+                                    : "border-transparent text-muted-foreground"
+                                    }`}
                             >
                                 {link.label}
                             </a>
@@ -130,11 +115,10 @@ export default function NavBar() {
                                 key={link.href}
                                 href={link.href}
                                 onClick={() => handleNavClick(link.href)}
-                                className={`rounded-lg px-4 py-4 text-lg font-medium transition-colors ${
-                                    activeLink === link.href
-                                        ? "bg-primary/10 text-primary"
-                                        : "text-foreground hover:bg-muted"
-                                }`}
+                                className={`rounded-lg px-4 py-4 text-lg font-medium transition-colors ${activeLink === link.href
+                                    ? "bg-primary/10 text-primary"
+                                    : "text-foreground hover:bg-muted"
+                                    }`}
                             >
                                 {link.label}
                             </a>

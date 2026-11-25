@@ -1,6 +1,6 @@
 import FooterLinkGroup from "./FooterLinkGroup";
-import FooterLogo from "./FooterLogo";
 import Copyright from "./Copyright";
+import Logo from "@/components/common/Logo";
 
 const productLinks = [
     { label: "Home", href: "#home" },
@@ -36,7 +36,7 @@ export default function Footer() {
 
                         {/* Brand */}
                         <div className="max-w-sm">
-                            <FooterLogo />
+                            <Logo />
 
                             <p className="body-regular mt-3 leading-relaxed text-muted-foreground">
                                 The modern simple event management platform
@@ -86,7 +86,7 @@ export default function Footer() {
                 {/* Tablet and mobile footer */}
                 <div className="flex flex-col items-center gap-4 py-6 text-center md:hidden">
 
-                    <FooterLogo />
+                    <Logo />
 
                     <nav
                         aria-label="Footer navigation"

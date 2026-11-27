@@ -1,11 +1,8 @@
-import express from "express";
+import { createApp } from "./app.js";
+import { db } from "./db/index.js";
 
-const app = express();
-
-app.use(express.json());
-
-app.get("/api/hello", (_req, res) => {
-  res.json({ status: "ok" });
+const app = createApp(db, {
+  secureCookies: process.env.NODE_ENV === "production",
 });
 
 const PORT = process.env.PORT || 8080;
